@@ -58,7 +58,7 @@ const speakOutput = response.data.choices[0].text + ' ¿qué más te gustaría s
 const HelpIntentHandler = {
     canHandle(handlerInput) {
         return Alexa.getRequestType(handlerInput.requestEnvelope) === 'IntentRequest'
-            && Alexa.getIntentName(handlerInput.requestEnvelope) === 'AMAZON.HelpIntentHandler';
+            && Alexa.getIntentName(handlerInput.requestEnvelope) === 'AMAZON.HelpIntent';
     },
     handle(handlerInput) {
         const speakOutput = 'Puedes preguntarme lo que gustes, tengo integrado Chat GPT, entonces, ¿cómo te puedo ayudar?';
